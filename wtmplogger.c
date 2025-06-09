@@ -53,6 +53,8 @@
 #include "logger.h"
 #include "proc_pid_util.h"
 
+#define WTMPLOGGER_NO_PARENT_PROCESS_CHECK
+
 /*
  * Write a wtmp entry direct to the end of the file
  */
