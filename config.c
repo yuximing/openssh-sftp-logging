@@ -3,7 +3,8 @@
 #include "config.h"
 
 char *SUDONAME = "/usr/bin/sudo";
-char *WTMPLOGGERNAME = "/usr/local/bin/wtmplogger";
+//char *WTMPLOGGERNAME = "/usr/local/bin/wtmplogger";
+char *WTMPLOGGERNAME = "/usr/bin/wtmplogger";
 
 #define SSHDNAME "/usr/sbin/sshd"
 
@@ -18,7 +19,7 @@ char *WTMPLOGGERNAME = "/usr/local/bin/wtmplogger";
  */
 struct process_check PARENT_PROCESS_CHECK_LIST[] = {
 	{.name = "/usr/bin/sudo", .euid = -1 },
-	{.name = "/usr/local/bin/sftpwrapper", .euid = -1},
+	{.name = "/usr/bin/sftpwrapper", .euid = -1},
 	{.name = SSHDNAME, .euid = -1 },
 	{.name = SSHDNAME, .euid = 0 },
 	{.name = NULL},
