@@ -18,4 +18,4 @@ clean:
 	rm -f $(EXES)
 
 install:	$(EXES)
-	install $(EXES) /usr/local/bin/
+	install $(EXES) /usr/bin/
